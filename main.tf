@@ -1,9 +1,14 @@
-### CONFIGURING PROVIDER
+###############################################
+#  CONFIGURING PROVIDER                       #
+###############################################
+
 provider "aws" {
   region = var.aws_region
 }
 
-### CREATE A S3 BUCKET
+###############################################
+#  CREATE A S3 BUCKET                         #
+###############################################
 resource "aws_s3_bucket" "bucket1" {
   bucket        = var.bucket_name
   acl           = "public-read"
